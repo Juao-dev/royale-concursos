@@ -6,28 +6,16 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 h1{
-  position: absolute;  
-  top: 0;            
-  left: 50%;           
-  transform: translateX(-50%);
-  background: none;   
-  color: black;        
-  font-size: 26px;
-  font-weight: bold;
-  font-family: 'Poppins', sans-serif;
-
+    font-size: 80px;
 }
 
 .cadastro{
-    width: 430px;
-    height: 430px;
+    width: 440px;
+    height: 490px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.288);
-    margin-bottom: 77px;
-    margin-right: 90px;
 }
 
 body{
@@ -38,8 +26,11 @@ body{
     justify-content: center;
     height: 100vh;
     gap: 60px;
+    flex-direction: column;
 }
-
+h2{
+    margin-bottom: 20px;
+}
 
 input{
     color: #000000;
@@ -57,6 +48,8 @@ form {
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    
+    justify-content: center;
 }
 
 button{
