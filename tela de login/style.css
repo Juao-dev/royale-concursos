@@ -7,17 +7,19 @@
 
 
 #img{
-    width: 642px;
-    height: 642px;
+    width: 850px;
+    height: 850px;
     margin-bottom: 132px;
 }
 
 .login{
-    width: 440px;
-    height: 490px;
+    width: 430px;
+    height: 430px;
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 77px;
+    margin-right: 90px;
 }
 
 body{
@@ -36,18 +38,48 @@ h1{
 }
 
 input{
-    color: #A6A0A0;
+    color: #000000;
     width: 344px;
-    height: 43px;
-    padding: 7px;
+    height: 45px;
+    padding: 6px;
     align-items: center;
+    border-radius: 5px;
+    border-color: #a6a0a070;
+    font-size: 18px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
     align-items: center;
+    
 
+}
 
+button{
+    color: #ffffff;
+    width: 344px;
+    height: 58px;
+    padding: 6px;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: #000000;
+    margin-top: 40px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+a{
+    color: #636363;
+    text-decoration: none;
+    
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+#Esqueceu{
+    margin-top: 12px;
 }
