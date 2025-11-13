@@ -86,3 +86,37 @@ img{
     font-family: "Inria Sans", sans-serif;
     padding-right: 50px;
 }
+
+h3{
+    font-size: 28px;
+    font-family: "Inria Sans", sans-serif;
+    border-bottom: 1px solid #333;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.sobre{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#texto4{
+    font-size: 25px;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    margin: 35px;
+}
+
+#texto5{
+    font-size: 25px;
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+    margin-right: 10px;
+}
