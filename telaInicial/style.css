@@ -30,10 +30,12 @@ main{
     flex-direction: column;
     align-items: center;
     height: 180px;
+    gap: 30px;
 }
 
-h2{
+#tt{
     font-size: 35px;
+    
 }
 
 nav{
@@ -71,3 +73,88 @@ nav a:hover{
     border-radius: 20px;
     color: white;
 }
+
+#pesquisa{
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #1414144b;
+    border-radius: 16px;
+    cursor: pointer;
+
+}
+
+#pesquisa i{
+    color: white;
+}
+
+#pesquisa input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+#pesquisa input:focus-visible{
+    outline: none;
+}
+
+.container{
+    padding-top: 70px;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.container2{
+    padding-top: 50px;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.quad a{
+    width: 361px;
+    height: 218px;
+    background: linear-gradient(to bottom, rgb(26, 26, 26), rgb(0, 0, 0));
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    text-decoration: none;
+    
+    
+}
+
+.quad h2{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 40px;
+    color: white;
+   
+    
+}
+
+.quad i{
+    color: #dadada;
+    font-size: 50px;
+
+}
+
+.quad p{
+    color: white;
+    font-size: 13px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
