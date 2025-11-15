@@ -1,23 +1,18 @@
-document.addEventListener('DOMContentLoaded', function() {
-  
-    const toggleButton = document.getElementById('menu-toggle-button');
-    const profileMenu = document.getElementById('profile-menu');
+const botao = document.querySelector('.botao-menu')
+const menuLateral = document.querySelector('.menu-lateral')
+const conteudo = document.querySelector('body')
+const background = document.querySelector('.background')
 
-   
-    toggleButton.addEventListener('click', function() {
-       
-        profileMenu.classList.toggle('hidden');
-    });
+botao.addEventListener('click', ()=> {
+    menuLateral.classList.toggle('ativo')
+    conteudo.classList.toggle('ativo')
+    background.classList.toggle('ativo')
+    botao.classList.toggle('ativo')
+})
 
-    
-    document.addEventListener('click', function(event) {
-       
-        const isClickInsideButton = toggleButton.contains(event.target);
-        const isClickInsideMenu = profileMenu.contains(event.target);
-
-        if (!isClickInsideButton && !isClickInsideMenu) {
-            
-            profileMenu.classList.add('hidden');
-        }
-    });
-});
+background.addEventListener('click', () => {
+    menuLateral.classList.remove('ativo')
+    conteudo.classList.remove('ativo')
+    background.classList.remove('ativo')
+    botao.classList.remove('ativo')                       
+})
