@@ -7,20 +7,20 @@
 header {
     background-color: #000;
     color: white;
+    padding: 15px 40px;
+    border-bottom: 1px solid #333;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 15px 40px;
-    border-bottom: 1px solid #333;
+ 
 }
 
 #nome{
     font-family: "Jersey 25", sans-serif;
-    font-size: 33px;
+    font-size: 40px;
     padding-bottom: 25px;
     padding-top: 15px;
-    align-items: center;
-    justify-content: center;
+    
 }
 
 h1{
@@ -190,9 +190,8 @@ main{
 
 .botao-menu{
     background-color: var(--primary-color);
-    position: fixed;
-    left: 20px;
-    top: 20px;
+    left: 25px;
+    top: 25px;
     z-index: 6;
     border-radius: 5px;
     border: none;
@@ -200,7 +199,9 @@ main{
     font-size: 24px;
     cursor: pointer;
     color: var(--text-color);
-    transition: 0.5s ease;
+    transition: all 0.5s ease;
+    position: fixed;
+  
 }
 
 .botao-menu:hover{
@@ -219,6 +220,7 @@ body{
 body.ativo{
     margin-left: 320px;
     transition: 0.5s ease;
+   
 }
 
 .background{
@@ -234,6 +236,123 @@ body.ativo{
 }
 
 .background.ativo{
-    opacity: 1;
+    opacity: 2;
     visibility: visible;
+    
+}
+
+footer{
+    width: 100%;
+    font-family: "Inria Sans", sans-serif;
+    padding-top: 70px;
+}
+
+#content-footer{
+    background-color: #000;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer-contatos p{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+#social-links{
+    padding-top: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#social-links .footer-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    
+}
+
+#social-links .footer-link:hover{
+    transform: translateX(5px) rotate(5deg);
+}
+
+#inta{
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#zapp{
+    background: linear-gradient(#01820e, #19ff57, #6fff1c);
+}
+
+#linkedin{
+    background: linear-gradient(#00065f, #034365, #030033);
+}
+
+#github{
+    background: linear-gradient(#0b0b0b, #121212, #100f0f);
+}
+
+#tutube{
+    background: linear-gradient(#ff0000, #690808, #9a4242);
+}
+
+#footer-copyright{
+    background-color: rgb(2, 2, 2);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.footer-list{
+    list-style: none;
+
+}
+
+#info{
+    font-size: 2rem;
+    font-family: "Jersey 25", sans-serif;
+    padding-bottom: 8px;
+}
+
+.footer-links{
+    font-family: "Inria Sans", sans-serif;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
+#footer-sugestoes{
+    font-size: 1.2rem;
+
+}
+
+#sug{
+    font-size: 2rem;
+    font-family: "Jersey 25", sans-serif;
+    padding-bottom: 8px;
+    
+}
+
+#email{
+    text-decoration: underline;
+    padding-top: 5px;
+    color: white;
+
+}
+
+#email:hover{
+   color: #00065f;
 }
