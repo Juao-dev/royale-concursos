@@ -101,3 +101,13 @@ input[type=number]::-webkit-outer-spin-button {
     justify-content: center;
 
 }
+
+a{
+    display: block;
+    width: 344px;
+    height: 58px;
+    text-decoration: none;
+    color: #F6F6F6;
+   line-height: 58px;
+
+}
