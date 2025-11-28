@@ -12,10 +12,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
- 
+
 }
 
- #nome{
+#nome {
     font-family: "Jersey 25", sans-serif;
     font-size: 40px;
     padding-bottom: 25px;
@@ -23,9 +23,9 @@ header {
     text-decoration: none;
     color: white;
 }
-    
 
-.perfil{
+
+.perfil {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -33,7 +33,7 @@ header {
     padding-top: 20px;
 }
 
-.perfil img{
+.perfil img {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -41,20 +41,20 @@ header {
     margin-bottom: 8px
 }
 
-#nome-usuario{
+#nome-usuario {
     font-size: 25px;
     color: #ffffff;
     font-family: "Jersey 25", sans-serif;
 }
 
-:root{
+:root {
     --primary-color: rgb(14, 14, 14);
     --secondary-color: rgb(34, 33, 33);
     --text-color: white;
     --background-color: rgb(8, 8, 8);
 }
 
-.menu-lateral{
+.menu-lateral {
     position: fixed;
     left: -300px;
     top: 0;
@@ -66,23 +66,23 @@ header {
     transition: 0.5s ease;
 }
 
-.menu-lateral.ativo{
+.menu-lateral.ativo {
     left: 0;
 }
 
-.menu-lateral ul{
+.menu-lateral ul {
     list-style-type: none;
     padding: 0;
     margin-top: 30px;
-    
+
 }
 
-.menu-lateral ul li{
+.menu-lateral ul li {
     padding: 15px 30px;
     font-family: "Jersey 25", sans-serif;
 }
 
-.menu-lateral ul li a{
+.menu-lateral ul li a {
     text-decoration: none;
     color: var(--text-color);
     font-size: 18px;
@@ -91,19 +91,19 @@ header {
     gap: 10px;
 }
 
-.menu-lateral ul li a i{
+.menu-lateral ul li a i {
     font-size: 24px;
 }
 
-.header-list:hover{
+.header-list:hover {
     background-color: var(--secondary-color);
 }
 
-.menu-lateral ul li a i:hover{
+.menu-lateral ul li a i:hover {
     transform: translateX(5px) rotate(5deg);
 }
 
-.botao-menu{
+.botao-menu {
     background-color: var(--primary-color);
     left: 25px;
     top: 25px;
@@ -116,29 +116,29 @@ header {
     color: var(--text-color);
     transition: all 0.5s ease;
     position: absolute;
-  
+
 }
 
-.botao-menu:hover{
+.botao-menu:hover {
     background-color: white;
     color: black;
 }
 
-.botao-menu.ativo{
+.botao-menu.ativo {
     left: 380px;
 }
 
-body{
+body {
     transition: 0.5s ease;
 }
 
-body.ativo{
+body.ativo {
     margin-left: 300px;
     transition: 0.5s ease;
-   
+
 }
 
-.background{
+.background {
     position: fixed;
     top: 0;
     left: 0;
@@ -150,18 +150,18 @@ body.ativo{
     z-index: 4;
 }
 
-.background.ativo{
+.background.ativo {
     opacity: 2;
     visibility: visible;
-    
+
 }
 
-.nomes-categorias{
+.nomes-categorias {
     font-size: 2rem;
     border-bottom: 1px solid #333;
 }
 
-main{
+main {
     color: white;
     background-color: black;
     font-family: "Inria Sans", sans-serif;
@@ -169,13 +169,38 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 180px;
+    height: 140px;
 }
 
-h2{
+h2 {
     font-family: "Jersey 25", sans-serif;
     font-weight: 400;
     font-size: 35px;
     font-style: normal;
 }
 
+.links-category {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+    padding-top: 15px;
+    gap: 30px;
+    width: 300px;
+    height: calc(100vh - 140px - 111px);
+    border-right: 1px solid black;
+
+}
+
+.links-category a {
+    font-family: "Inria Sans", sans-serif;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    width: 324px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+
+}
