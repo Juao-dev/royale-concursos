@@ -12,15 +12,18 @@ header {
     align-items: center;
     padding: 15px 40px;
     border-bottom: 1px solid #333;
+    z-index: 1000;
+    position: fixed;
+    width: 100%;
 }
 
-#nome{
+#nome {
     font-weight: 600;
     font-family: "Jersey 25", sans-serif;
     font-size: 1.8rem;
 }
 
-button{
+button {
     background: transparent;
     border: 1px solid white;
     color: white;
@@ -34,28 +37,22 @@ button{
     transition: all 0.2s ease;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
 nav a {
     color: white;
     text-decoration: none;
     font-size: 1.2rem;
 }
 
-nav a:hover{
+nav a:hover {
     text-decoration: underline;
 }
 
-button:hover{
+button:hover {
     background-color: white;
     color: black;
 }
 
-main{
+main {
     color: white;
     background-color: black;
     font-family: "Inria Sans", sans-serif;
@@ -66,28 +63,32 @@ main{
     height: 180px;
 }
 
-h2{
+h2 {
     font-size: 35px;
 }
 
-.ranking{
+#sobreNos {
+    padding-top: 50px;
+}
+
+.ranking {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 40px;
 }
 
-img{
+img {
     width: 800px;
 }
 
-#texto2{
+#texto2 {
     font-size: 25px;
     font-family: "Inria Sans", sans-serif;
     padding-right: 50px;
 }
 
-h3{
+h3 {
     font-size: 28px;
     font-family: "Inria Sans", sans-serif;
     border-bottom: 1px solid #333;
@@ -96,27 +97,57 @@ h3{
     flex-direction: column;
     padding-top: 40px;
     padding-bottom: 30px;
-    
-    
+
+
 }
 
-.sobre{
+.sobre {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     padding-top: 40px;
 }
 
-#texto4{
+#texto4 {
     font-size: 25px;
     font-family: "Inria Sans", sans-serif;
     font-size: 20px;
     margin: 35px;
 }
 
-#texto5{
+#texto5 {
     font-size: 25px;
-    font-family: "Inria Sans", sans-serif;
+    font-family: "Inria Sans";
     font-size: 20px;
     margin-right: 10px;
+}
+
+.meusC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 90px;
+}
+
+.meusC p{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+}
+
+.editais{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 40px;
+}
+
+#texto8{
+    font-size: 25px;
+    font-family: "Inria Sans", sans-serif;
+    padding-right: 50px;
+}
+
+#imgedital{
+    width: 600px;
+    padding-left: 80px;
 }
