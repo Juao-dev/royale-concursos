@@ -44,12 +44,13 @@ nav a {
 }
 
 nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 button:hover {
     background-color: white;
     color: black;
+    transition: 0.5s;
 }
 
 main {
@@ -139,6 +140,7 @@ h3 {
     flex-direction: row;
     align-items: center;
     padding-top: 40px;
+    margin: 25px;
 }
 
 #texto8{
@@ -150,4 +152,18 @@ h3 {
 #imgedital{
     width: 600px;
     padding-left: 80px;
+}
+
+.assinatura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 40px;
+}
+
+#texto10{
+    font-size: 25px;
+    font-family: "Inria Sans", sans-serif;
+    padding-right: 50px;
 }
