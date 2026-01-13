@@ -17,19 +17,3 @@ background.addEventListener('click', () => {
     background.classList.remove('ativo')
     botao.classList.remove('ativo')                       
 })
-
-//foto de perfil
-const inputFoto = document.getElementById("inputFoto")
-const fotoPerfil = document.getElementById("fotoPerfil")
-
-inputFoto.addEventListener("change", () => {
-    const arquivo = inputFoto.files[0]
-    if (arquivo) {
-        const reader = new FileReader ()
-        reader.onload = () => {
-            fotoPerfil.src = reader.result
-        }
-        reader.readAsDataURL(arquivo)
-    }
-
-})
