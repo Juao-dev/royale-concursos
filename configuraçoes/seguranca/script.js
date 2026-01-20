@@ -17,3 +17,10 @@ background.addEventListener('click', () => {
     background.classList.remove('ativo')
     botao.classList.remove('ativo')                       
 })
+
+//ativar autenticacao de duas etapas
+let trilho = document.getElementById('trilho')
+
+trilho.addEventListener('click', ()=>{
+    trilho.classList.toggle('ativado')
+})

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,24 +12,51 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
-    <h1 class="titulo">Royale Concursos</h1>
-    
-    <form action="" class="cadastro">
+
+    <form action="" class="cadastro" onsubmit="return validarFormulario()"><!--evento de form que executa funcao JS quando o form e enviado-->
         
-        <h2>Criar nova conta</h2>
-        <label for="nome do usuário"></label>
-        <input type="text" name="nome de usuário" placeholder="Nome de usuário">
-        <label for="email"></label>
-        <input type="text" name="email" placeholder="Email"> 
-        <label for="senha"></label>
-        <input type="password" name="senha" placeholder="Senha">
-        <button type=""><a id="aCadastro"  href="../telaInicial/index.html">Cadastrar-se</a></button>
-        <a href="/tela de login/index.html" id="Esqueceu">Já tem uma conta?</a>
+        <div class="container">
+            <div class="img-cadastro">
+                <img src="./img-cadastro.png" alt="imagem">
+            </div>
+
+            <div class="cadastro-container">
+                <h1>Criar nova conta</h1>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" name="nome de usuário" placeholder="Nome de usuário" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <span id="erro-email"></span>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <span id="erro-senha"></span>
+                    <i class="fa-solid fa-eye eye-icon"></i>
+                </div>
+
+                <button type="submit">Cadastrar-se</button>
+
+                <a href="../tela de login/index.html">Ja tem uma conta ?</a>
+            </div>
+        </div>
+
 
     </form>
 
 </body>
+
+<script src="scrip.js"></script>
+
 </html>

@@ -8,26 +8,45 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
-    <img id="img" src="./logo royale concursos.png" alt="logo">
+    <form action="" class="login">
 
-    <div id="formContainer">
-        <form action="" class="login">
-            <h1>Login</h1>
-            <label for="email"></label>
-            <input type="text" name="email" placeholder="Email">
-            <label for="senha"></label>
-            <input type="password" name="senha" placeholder="Senha">
-            
-            <button type=""><a id="aLogin" href="../telaInicial/index.html">Entrar </a></button>
-           
-            <a href="../paginaesqueceuasenha/Tela 1.html" id="Esqueceu">Esqueceu a senha ?</a>
-            <a href="/paginadeCadastro/paginadeCadastro.html">Cadastrar-se</a>
-        </form>
-    </div>
+        <div class="container">
+            <div class="img-login">
+                <img src="./logo royale concursos.png" alt="logo">
+            </div>
+
+            <div class="login-container">
+                <h1>Login</h1>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <i class="fa-solid fa-eye eye-icon"></i>
+                </div>
+
+                <button type="submit" id="aLogin">Entrar</button>
+
+                <a href="../paginaesqueceuasenha/Tela 1.html" id="Esqueceu">Esqueceu a senha ?</a>
+                <a href="/paginadeCadastro/paginadeCadastro.html">Cadastrar-se</a>
+            </div>
+        </div>
+    </form>
 </body>
+
+<script src="script.js"></script>
+
 </html>

@@ -1,94 +1,109 @@
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    font-size: 50px;
-    font-family: "Jersey 25" sans-serif;
-}
 
-.cadastro{
-    width: 440px;
-    height: 490px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.288);
-}
-
-body{
-    background-color: #F6F6F6;
-    font-family: "Jersey 25", system-ui;
+body {
+    background-color: #ebebeb;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    gap: 60px;
-    flex-direction: column;
-}
-h2{
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-family: "Jersey 25" sans-serif;
+    min-height: 100vh;
 }
 
-input{
-    color: #000000;
-    width: 344px;
-    height: 45px;
-    padding: 6px;
-    align-items: center;
-    border-radius: 5px;
-    border-color: #a6a0a070;
-    font-size: 18px;
-}
-
-form {
+.container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+}
+
+.img-cadastro img {
+    width: 410px;
+    height: 600px;
+    border-radius: 17px;
+
+}
+
+.cadastro-container {
+    display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px;
+    width: 410px;
+    height: 600px;
+    background-color: white;
+    border-radius: 17px;
+    gap: 30px;
 }
 
-button{
-    color: #ffffff;
-    width: 344px;
-    height: 58px;
-    padding: 6px;
-    align-items: center;
-    border-radius: 5px;
-    font-size: 18px;
-    background-color: #000000;
-    margin-top: 40px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+h1 {
+    font-family: "Jersey 25";
+    font-size: 38px;
+}
+
+input {
+    width: 100%;
+    height: 48px;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.5s;
+
+}
+
+.input-group {
+    position: relative;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.input-group i:not(.eye-icon) {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    /*calculo para deixar o icones centralizados*/
+    color: #888;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
     cursor: pointer;
 }
 
-a{
-    color: #636363;
+input:focus
+
+/*focus serve para estilizar apenas quando o usuario clina, dando foco ao iten*/
+    {
+    border-color: #000000;
+}
+
+button {
+    width: 348px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+a {
+    color: #888;
     text-decoration: none;
     font-size: 20px;
-    
+    font-family: "Inria Sans";
 }
 
-#aCadastro {
-
-    display: block;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-decoration: none;
-}
-
-a:hover{
-    text-decoration:underline;
-}
-
-#Esqueceu{
-    margin-top: 12px;
+a:hover {
+    text-decoration: underline
 }
