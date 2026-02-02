@@ -123,6 +123,22 @@ main{
     
 }
 
+.quad a:hover{
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .quad h2{
     font-family: "Jersey 25", sans-serif;
     font-size: 40px;
@@ -187,6 +203,8 @@ main{
     align-items: center;
     gap: 10px;
 }
+
+
 
 .menu-lateral ul li a i{
     font-size: 24px;
