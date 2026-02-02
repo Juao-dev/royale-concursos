@@ -18,9 +18,8 @@ header {
 }
 
 #nome {
-    font-weight: 600;
     font-family: "Jersey 25", sans-serif;
-    font-size: 1.8rem;
+    font-size: 40px;
 }
 
 button {
@@ -106,64 +105,53 @@ h3 {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-top: 40px;
 }
 
 #texto4 {
-    font-size: 25px;
+    font-size: 30px;
     font-family: "Inria Sans", sans-serif;
-    font-size: 20px;
     margin: 35px;
 }
 
-#texto5 {
-    font-size: 25px;
-    font-family: "Inria Sans";
-    font-size: 20px;
-    margin-right: 10px;
+section{
+    min-height: 100vh;
 }
 
-.meusC {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 90px;
+#logo-img{
+    height: 500px;
+    width: 700px;
 }
 
-.meusC p{
+.container-text h2{
+    font-family: "Jersey 25", sans-serif;
+    font-size: 43px;
+}
+
+#name{
+    color: blue;
+}
+
+.container-text{
+    width: 900px;
+}
+
+#motivacional{
     font-family: "Inria Sans", sans-serif;
-    font-size: 20px;
+    font-size: 29px;
 }
 
-.editais{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-top: 40px;
-    margin: 25px;
+.hidden{
+    opacity: 0;
+    filter: blur(12px);
+    transition: all 2.5s;
+    transform: translateX(-100%);
 }
 
-#texto8{
-    font-size: 25px;
-    font-family: "Inria Sans", sans-serif;
-    padding-right: 50px;
-}
-
-#imgedital{
-    width: 600px;
-    padding-left: 80px;
-}
-
-.assinatura{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    padding-top: 40px;
-}
-
-#texto10{
-    font-size: 25px;
-    font-family: "Inria Sans", sans-serif;
-    padding-right: 50px;
+.show{
+    opacity: 1;
+    transition: all 2.5s;
+    filter: blur(0px);
+    transform: translateX(0);
 }
