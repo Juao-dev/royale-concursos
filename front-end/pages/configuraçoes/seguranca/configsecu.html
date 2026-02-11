@@ -67,17 +67,13 @@
             </li>
 
             <li>
-                <a href="">
-                    <i class="fa-solid fa-bookmark"></i>
-                    Preferencias
-                </a>
-            </li>
-            <li>
                 <a href="../seguranca/configsecu.html">
                     <i class="fa-solid fa-shield"></i>
                     Privacidade e segurança
                 </a>
             </li>
+
+        
 
         </ul>
 
@@ -85,11 +81,17 @@
             <div class="senhas">
                 <p class="titulo">Segurança</p>
 
-                <p class="security-tems">Senha atual</p>
-                <input type="password">
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Senha" required>
+                    <i class="fa-solid fa-eye eye-icon"></i>
+                </div>
 
-                <p class="security-tems">Nova senha</p>
-                <input type="password">
+                <div class="input-group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" placeholder="Nova Senha" required>
+                    <i class="fa-solid fa-eye eye-icon"></i>
+                </div>
             </div>
 
             <div class="saves">
@@ -115,24 +117,37 @@
                         seu celular ou aplicativo, um PIN ou biometria, protegendo-a contra acessos não autorizados.</p>
                 </div>
             </div>
-        </div>
 
-        <div class="security2">
+            
             <div class="excluir">
                 <p class="titulo">Excluir conta<i class="fa-solid fa-circle-exclamation"></i></p>
                 <p id="text-excluir">Esta açao nao pode ser revertida!</p>
-
+    
                 <div class="btn-ex">
-                    <button><a href="">Excluir conta!</a></button>
-                </div>
+                    <button id="openModal"> Excluir conta!</button>
+                </div>   
             </div>
         </div>
+
+        <div class="security2"></div>
 
 
 
 
 
     </div>
+
+    <dialog id="modal">
+        <div class="modal-header">
+            <p>Excluir Conta!</p>
+            <p id="text">Tem certeza que deseja continuar com esta açao?</p>
+        </div>
+
+        <div class="modal-body">
+            <button id="sim"> Sim !</button>
+            <button id="closeModal" class="nao""> Nao !</button>
+        </div>
+    </dialog>
 
 </body>
 

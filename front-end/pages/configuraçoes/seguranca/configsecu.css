@@ -220,6 +220,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
+    
 
 }
 
@@ -235,11 +236,7 @@ h2 {
     font-weight: bold;
 }
 
-.senhas input{
-    width: 50vh;
-    height: 30px;
-    border-radius: 5px;
-}
+
 
 .saves{
     margin-top: 30px;
@@ -324,6 +321,10 @@ h2 {
     padding-top: 6px;
 }
 
+.excluir{
+    padding-top: 50px;
+}
+
 .excluir i{
     font-size: 30px;
     padding-left: 8px;
@@ -343,11 +344,126 @@ h2 {
     border: none;
     background-color: black;
     cursor: pointer;
+    color: white;
 }
 
-.btn-ex button a{
-    width: 120px;
-    height: 40px;
+.input-group {
+    position: relative;
+    width: 85%;
+    margin-bottom: 15px;
+}
+
+.input-group i:not(.eye-icon) { /*calculo para deixar o icones centralizados*/
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.eye-icon {
+    position: absolute;
+    right: -14%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+}
+
+input {
+    width: 447px;
+    height: 48px;
+    padding: 12px 15px 12px 45px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.5s;
+
+}
+
+dialog{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    background: white;
+    color: rgb(0, 0, 0);
+    width: 570px;
+    height: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+dialog[open]{
+    display: flex;
+    flex-direction: column;
+}
+
+dialog::backdrop{
+    background: #3939399b;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.modal-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Jersey 25", sans-serif;
+    flex-shrink: 0;
+}
+
+.modal-header button{
+    background-color: transparent;
+    border: none;
+    color: rgb(79, 78, 78);
+    font-size: 20px;
+}
+
+.modal-header p{
+    font-size: 25px;
+}
+
+.modal-body{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+    gap: 40px;
+    padding-top: 10px;
+}
+
+.modal-body p{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 20px;
+}
+
+.modal-body button{
+    cursor: pointer;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    width: 70px;
+    
+}
+
+#text{
+    font-family: "Inria Sans", sans-serif;
+    font-size: 21.5px;
+}
+
+#sim:hover{
+    background-color: red;
     color: white;
-    text-decoration: none;
+}
+
+.nao:hover{
+    background-color: green;
+    color: white;
 }
