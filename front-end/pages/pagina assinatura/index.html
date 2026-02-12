@@ -1,25 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assinatura</title>
     <link rel="stylesheet" href="style.css">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
-    
+    <header>
+        <button class="botao-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <nav class="menu-lateral">
+
+            <div class="perfil">
+                <img src="/front-end/assets/images/lebron bb.jpg" alt="logo-usuario">
+                <p id="nome-usuario">Lebron BB</p>
+            </div>
 
 
+            <ul>
+                <li class="nomes-categorias">Sistema</li>
+                <li class="header-list"><a href="../configuraçoes/perfil/configperfil.html"><i
+                            class="fa-solid fa-gears"></i>Configuracoes</a></li>
+                <li class="header-list"><a href="../pagina sobre/index.html"><i
+                            class="fa-solid fa-circle-exclamation"></i>Sobre</a></li>
+                <li class="header-list"><a href="/front-end/pages/telaInicial/index.html"><i
+                            class="fa-solid fa-house"></i>Inicio</a></li>
+
+
+                <li class="nomes-categorias">Salvos</li>
+                <li class="header-list"><a href="#"><i class="fa-solid fa-book-open"></i>Minhas Provas</a></li>
+
+
+            </ul>
+        </nav>
+
+        <p id="nome">royale concursos</p>
+    </header>
+
+    <main>
+        <h2 id="tt">Assinaturas</h2>
+    </main>
+
+    <div class="background "></div>
+
+
+    <div class="centralizar">
+
+        <div class="container" id="container">
+            <div class="men-container mensal">
+                <div class="content">
+                    <h1>Plano mensal!</h1>
+                    <h2>R$12,90</h2>
+
+                    <div class="list-preference">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>remover anuncios</p>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-xmark"></i>
+                                <p>conteudos de estudo</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button>Adquirir plano!</button>
+                </div>
+            </div>
+
+            <div class="vita-container vitalicio">
+                <div class="content">
+                    <h1>Plano vitalicio!</h1>
+                    <h2>R$24,90</h2>
+
+                    <div class="list-preference">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>remover anuncios</p>
+                            </li>
+
+                            <li>
+                                <i class="fa-solid fa-check"></i>
+                                <p>conteudos de estudo</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button>Adquirir plano!</button>
+                </div>
+            </div>
+
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel left">
+                        <h1>Ir para plano mensal!</h1>
+
+                        <button class="hidden" id="mensal">clique aqui!</button>
+                    </div>
+
+                    <div class="toggle-panel right">
+                        <h1>Ir para plano vitalicio!</h1>
+
+                        <button class="hidden" id="vitalicio">clique aqui!</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
 </body>
 
-    <script src="scrip..js"></script>
+<script src="scrip..js"></script>
 
 </html>
