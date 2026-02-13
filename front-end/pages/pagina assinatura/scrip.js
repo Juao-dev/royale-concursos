@@ -18,3 +18,16 @@ background.addEventListener('click', () => {
     botao.classList.remove('ativo')                       
 })
 
+// COMANDO PARA TROCAR AS ASSINATURAS
+
+const container = document.getElementById('container')
+const vitalicio = document.getElementById('vitalicio')
+const mensal = document.getElementById('mensal')
+
+vitalicio.addEventListener('click', ()=>{
+    container.classList.add("active");
+})
+
+mensal.addEventListener('click', ()=>{
+    container.classList.remove("active");
+})
