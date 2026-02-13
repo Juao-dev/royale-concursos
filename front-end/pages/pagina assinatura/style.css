@@ -275,10 +275,11 @@ body.ativo{
 
 .container.active .mensal{
     transform: translateX(100%);
+    left: -50%;
 }
 
 .vitalicio{
-    left: 50%;
+    left: 0;
     width: 50%;
     opacity: 0;
     z-index: 1;
