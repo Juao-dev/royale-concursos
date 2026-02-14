@@ -11,18 +11,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Jersey+25&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Konkhmer+Sleokchher&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Konkhmer+Sleokchher&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
 <body>
 
-    <form action="" class="cadastro" onsubmit="return validarFormulario()"><!--evento de form que executa funcao JS quando o form e enviado-->
-        
+    <form action="" class="cadastro" onsubmit="return validarFormulario()">
+        <!--evento de form que executa funcao JS quando o form e enviado-->
+
         <div class="container">
             <div class="img-cadastro">
-                <img src="./img-cadastro.png" alt="imagem">
+                <img src="img-cadastro-começa.png" alt="imagem">
             </div>
 
             <div class="cadastro-container">
@@ -30,7 +32,12 @@
 
                 <div class="input-group">
                     <i class="fa-solid fa-user"></i>
-                    <input type="text" name="nome de usuário" placeholder="Nome de usuário" required>
+                    <input type="text" name="nome de usuário" placeholder="Nome completo" required>
+                </div>
+
+                <div class="input-group">
+                    <i class="fa-solid fa-address-card"></i> 
+                    <input type="text" name="nome de usuário" placeholder="Digite seu CPF" required>
                 </div>
 
                 <div class="input-group">
