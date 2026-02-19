@@ -7,3 +7,10 @@
 // Campos: id, nome, cpf, email, senha
 
 // Mapeamento da entidade
+
+package com.royaleconcursos.model;
+
+public class Usuario {
+
+    
+}
